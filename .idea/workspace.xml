@@ -2,11 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56b1d6f6-5c50-476c-819d-536b5e50d538" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/scss/footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/nav.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Web_task_1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/footer.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/index.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/main.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/nav.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/nav.css.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,11 +51,33 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603272503927</updated>
-      <workItem from="1603272505035" duration="2995000" />
+      <workItem from="1603272505035" duration="3334000" />
     </task>
+    <task id="LOCAL-00001" summary="have changed structure scss">
+      <created>1603275944209</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603275944209</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="have changed structure scss" />
+    <option name="LAST_COMMIT_MESSAGE" value="have changed structure scss" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="535" y="88" key="CommitChangelistDialog2" timestamp="1603275943269">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="535" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603275943269" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603275955120">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603275955120" />
   </component>
 </project>
