@@ -3,3 +3,18 @@ $hover-background: #a7a6a3;
 $main-background: #b0a6a6;
 $menu-color: black;
 $white-color: white;
+
+%general-item {
+  width: 130px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%list {
+  display: flex;
+  list-style-type: none;
+  padding-inline-start: 0;
+  margin: 0;
+}

@@ -1,0 +1,13 @@
+@import "variables";
+
+.main {
+  margin: -4px auto;
+  width: 1200px;
+  font-size: $main-size;
+  padding: 70px;
+  background: linear-gradient(45deg, $main-background, transparent);
+
+  & h2, .content::first-letter {
+    margin-left: 20px;
+  }
+}
