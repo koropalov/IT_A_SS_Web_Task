@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56b1d6f6-5c50-476c-819d-536b5e50d538" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Web_task_1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/footer.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/index.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/main.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/nav.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/nav.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/nav.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +39,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603272503927</updated>
-      <workItem from="1603272505035" duration="3334000" />
+      <workItem from="1603272505035" duration="4710000" />
     </task>
     <task id="LOCAL-00001" summary="have changed structure scss">
       <created>1603275944209</created>
