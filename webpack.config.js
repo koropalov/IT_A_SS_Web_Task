@@ -14,12 +14,25 @@ const isDev = !isProd;
 console.log('is Prod', isProd);
 console.log('isDev', isDev);
 
-const filename = ext => isDev ? `bundle.${ext}` : `bundle.[hash].${ext}`;
+const filename = ext => isDev ? `[name].bundle.${ext}` : `[name].bundle.[hash].${ext}`;
+
+let htmlPageNames = ['news'];
+
+let multipleHtmlPlugins = htmlPageNames.map(name => {
+    return new HTMLWebpackPlugin({
+        template: `./pages/${name}/${name}.html`,
+        filename: `./pages/${name}/${name}.html`,
+        chunks: [`${name}`]
+    })
+});
 
 module.exports = {
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
-    entry: ['@babel/polyfill', './index.js'],
+    entry: {
+        index: './index.js',
+         news: './pages/news/news.js'
+    },
     output: {
         filename: filename('js'),
         path: path.resolve(__dirname, 'dist')
@@ -43,8 +56,17 @@ module.exports = {
             minify: {
                 removeComments: isProd,
                 collapseWhitespace: isProd
-            }
+            },
+            chunks: ['index']
         }),
+/*        new HTMLWebpackPlugin({
+            template: 'pages/news/news.html',
+            minify: {
+                removeComments: isProd,
+                collapseWhitespace: isProd
+            },
+            chunks: ['index','news']
+        }),*/
         new CopyPlugin({
             patterns: [{
                 from: path.resolve(__dirname, 'src/favicon.ico'),
@@ -62,7 +84,8 @@ module.exports = {
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
         })
-    ],
+    //    ],
+     ].concat(multipleHtmlPlugins),
     module: {
         rules: [
             {
@@ -71,8 +94,8 @@ module.exports = {
                     {
                         loader: 'image-webpack-loader',
                         options: {
-                            bypassOnDebug: true, // webpack@1.x
-                            disable: true, // webpack@2.x and newer
+                            bypassOnDebug: true,
+                            disable: true,
                         },
                     },
                     'file-loader',
