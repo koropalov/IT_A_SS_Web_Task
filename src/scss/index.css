@@ -1,3 +1,33 @@
+.footer .footer_div .footer_link, .nav .menu-list .menu-item .dropdown .droptitl, .nav .menu-list .menu-nested .dropdown .droptitl, .nav .menu-list .menu-item, .nav .menu-list .menu-nested {
+  width: 130px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .footer_div .footer_list, .nav .menu-list {
+  display: flex;
+  list-style-type: none;
+  padding-inline-start: 0;
+  margin: 0;
+}
+
+.footer .footer_div .footer_link, .nav .menu-list .menu-item .dropdown .droptitl, .nav .menu-list .menu-nested .dropdown .droptitl, .nav .menu-list .menu-item, .nav .menu-list .menu-nested {
+  width: 130px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .footer_div .footer_list, .nav .menu-list {
+  display: flex;
+  list-style-type: none;
+  padding-inline-start: 0;
+  margin: 0;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -21,13 +51,12 @@
   color: black;
   text-decoration: none;
   width: 220px;
-  height: 70px;
+  height: 30px;
   font-size: 25px;
+  padding: 12px 16px;
 }
 .nav .menu-list .menu-item .dropdown:hover .dropdown-content, .nav .menu-list .menu-nested .dropdown:hover .dropdown-content {
-  display: flex;
-  flex-direction: column;
-  align-items: inherit;
+  display: block;
 }
 .nav .menu-list .menu-item .dropdown:hover .droptitl, .nav .menu-list .menu-item .dropdown-content .menu-item-nested:hover, .nav .menu-list .menu-nested .dropdown:hover .droptitl, .nav .menu-list .menu-nested .dropdown-content .menu-item-nested:hover {
   background-color: #a7a6a3;
@@ -36,6 +65,21 @@
 .nav .menu-list .menu-item:hover {
   background-color: #a7a6a3;
   transition: background-color 0.3s ease-in-out;
+}
+
+.footer .footer_div .footer_link, .nav .menu-list .menu-item, .nav .menu-list .menu-nested, .nav .menu-list .menu-item .dropdown .droptitl, .nav .menu-list .menu-nested .dropdown .droptitl {
+  width: 130px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .footer_div .footer_list, .nav .menu-list {
+  display: flex;
+  list-style-type: none;
+  padding-inline-start: 0;
+  margin: 0;
 }
 
 .main {
@@ -49,38 +93,7 @@
   margin-left: 20px;
 }
 
-.footer {
-  display: flex;
-  width: 100%;
-  height: 200px;
-  padding-top: 20px;
-  background-color: black;
-  color: white;
-  justify-content: space-between;
-}
-.footer .footer_list .footer_link {
-  text-decoration: none;
-  color: white;
-  font-size: 25px;
-}
-.footer .footer_list .footer_link:hover {
-  color: #a7a6a3;
-  background-color: black;
-  transition: background-color 0.3s ease-in-out;
-}
-.footer .go_up {
-  background-color: white;
-  height: 96px;
-  width: 96px;
-  border-radius: 50px;
-  border: 2px solid aliceblue;
-}
-.footer .go_up:hover {
-  background-color: #a7a6a3;
-  border: 2px solid #a7a6a3;
-}
-
-.nav .menu-list .menu-item, .nav .menu-list .menu-nested, .nav .menu-list .menu-item .dropdown .droptitl, .nav .menu-list .menu-nested .dropdown .droptitl, .footer .footer_list .footer_link {
+.footer .footer_div .footer_link, .nav .menu-list .menu-item, .nav .menu-list .menu-nested, .nav .menu-list .menu-item .dropdown .droptitl, .nav .menu-list .menu-nested .dropdown .droptitl {
   width: 130px;
   height: 70px;
   display: flex;
@@ -88,11 +101,50 @@
   align-items: center;
 }
 
-.nav .menu-list, .footer .footer_list {
+.footer .footer_div .footer_list, .nav .menu-list {
   display: flex;
   list-style-type: none;
   padding-inline-start: 0;
   margin: 0;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  padding-top: 20px;
+  background-color: black;
+  color: white;
+  flex-direction: column;
+}
+.footer .footer_div {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer_div .footer_link {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+.footer .footer_div .footer_link .footer_link:hover {
+  color: #a7a6a3;
+  background-color: black;
+  transition: background-color 0.3s ease-in-out;
+}
+.footer .footer_div .go_up {
+  background-color: white;
+  height: 96px;
+  width: 96px;
+  border-radius: 50px;
+  border: 2px solid aliceblue;
+}
+.footer .social {
+  display: flex;
+  justify-content: center;
+}
+.footer .go_up:hover {
+  background-color: #a7a6a3;
+  border: 2px solid #a7a6a3;
 }
 
 /*# sourceMappingURL=index.css.map */
