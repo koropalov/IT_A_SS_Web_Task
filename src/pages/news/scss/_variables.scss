@@ -18,3 +18,9 @@ $white-color: white;
   padding-inline-start: 0;
   margin: 0;
 }
+%transformation {
+  transform-style: flat;
+  transform: rotateX(45deg);
+  -webkit-animation: rotate 5s infinite;
+  animation: rotate 5s infinite;
+}

@@ -7,16 +7,25 @@
   padding-top: 20px;
   background-color: $menu-color;
   color: $white-color;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 
-  & .footer_list {
-    @extend %list;
+  & .footer_div {
+    display: flex;
+    justify-content: space-between;
+    width: inherit;
+
+
+    & .footer_list {
+      @extend %list;
+    }
 
     & .footer_link {
       @extend %general-item;
       text-decoration: none;
       color: $white-color;
       font-size: $main-size;
+
     }
 
     & .footer_link:hover {
@@ -24,18 +33,27 @@
       background-color: $menu-color;
       transition: background-color .3s ease-in-out;
     }
+
+
+    & .go_up {
+      background-color: $white-color;
+      height: 96px;
+      width: 96px;
+      border-radius: 50px;
+      border: 2px solid aliceblue;
+    }
+
+    & .go_up:hover {
+      background-color: $hover-background;
+      border: 2px solid $hover-background;
+    }
   }
 
-  & .go_up {
-    background-color: $white-color;
-    height: 96px;
-    width: 96px;
-    border-radius: 50px;
-    border: 2px solid aliceblue;
+  & .social {
+    display: flex;
+    justify-content: space-around;
+    width: 260px;
   }
 
-  & .go_up:hover {
-    background-color: $hover-background;
-    border: 2px solid $hover-background;
-  }
+
 }
