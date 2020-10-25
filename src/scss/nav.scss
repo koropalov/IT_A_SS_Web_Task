@@ -1,9 +1,5 @@
 @import "variables";
 
-html, body {
-  overflow: hidden;
-}
-
 .nav {
   display: flex;
   justify-content: space-between;
@@ -45,10 +41,14 @@ html, body {
       width: 50%;
       transform: translateX(-100%);
       transition: transform .5s ease-in;
-
     }
     & .menu-list li {
       opacity: 0;
+
+      & .dropdown-content {
+        margin-top: -78px;
+        margin-left: -9px;
+      }
     }
 
 
