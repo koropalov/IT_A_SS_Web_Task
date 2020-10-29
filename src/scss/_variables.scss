@@ -20,7 +20,7 @@ $white-color: white;
 }
 %transformation {
   transform-style: flat;
-  transform: rotateX(45deg);
+  transform: rotateY(180deg);
   -webkit-animation: rotate 5s infinite;
   animation: rotate 5s infinite;
 }

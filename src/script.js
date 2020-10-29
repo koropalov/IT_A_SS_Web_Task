@@ -1,6 +1,7 @@
 const burger = document.querySelector('.burger'),
     nav = document.querySelector('.menu-list'),
-    links = document.querySelectorAll('.menu-list li');
+    links = document.querySelectorAll('.menu-list li'),
+    log = document.querySelector('.logo');
 
 function slider() {
     burger.addEventListener('click', () => {
@@ -19,6 +20,15 @@ function slider() {
 
 slider();
 
+function logo() {
+    links.forEach((link) => {
+         (link.addEventListener('click',()=>{
+             log.classList.toggle('logo-transform')
+         }))
+
+    })
+}
+logo();
 
 
 

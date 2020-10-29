@@ -1,9 +1,14 @@
 @import "variables";
 
+body {
+  margin: 0;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  background-color: #f1f1f1;
 
   & .burger {
     cursor: pointer;
@@ -46,8 +51,7 @@
       opacity: 0;
 
       & .dropdown-content {
-        margin-top: -78px;
-        margin-left: -9px;
+        margin-top: -70px;
       }
     }
 
@@ -81,8 +85,13 @@
     }
   }
 
+  & .logo-transform {
+    @extend %transformation
+  }
+
   & .menu-list {
     @extend %list;
+
 
     & .menu-item, .menu-nested {
       @extend %general-item;
@@ -98,8 +107,8 @@
         & .dropdown-content {
           display: none;
           position: absolute;
-          top: 78px;
-          left: 138px;
+          top: 70px;
+          left: 130px;
           background-color: #f1f1f1;
           opacity: 0.6;
 
@@ -125,9 +134,9 @@
         transition: background-color .3s ease-in-out;
       }
 
-      & .dropdown-content .menu-item-nested:active {
-        @extend %transformation
-      }
+      //& .dropdown-content .menu-item-nested:active {
+      //  @extend %transformation
+      //}
     }
 
     & .active {
@@ -157,4 +166,9 @@
     }
 
   }
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
 }
