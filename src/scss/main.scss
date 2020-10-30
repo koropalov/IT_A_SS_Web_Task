@@ -14,10 +14,18 @@
 @media screen and (max-width: 840px){
   .main{
     margin: -4px auto;
-    width: 80%;
+    width: 82%;
     font-size: $main-size;
     padding: 70px;
     background: linear-gradient(45deg, $main-background, transparent);
 
   }
+}
+@media screen and (max-width: 425px){
+  .main{
+    font-size: 18px;
+    width: 91%;
+    padding: 20px;
+  }
+
 }
