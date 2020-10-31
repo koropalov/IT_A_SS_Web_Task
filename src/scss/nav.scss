@@ -7,8 +7,23 @@ body {
 .nav {
   display: flex;
   justify-content: space-between;
+  position: fixed;
   width: 100%;
-  background-color: #f1f1f1;
+  background: linear-gradient(-45deg, #d46969, #eed452, #6197e7, #63eed5);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
   & .burger {
     cursor: pointer;
@@ -31,7 +46,6 @@ body {
       width: 60%;
     }
   }
-
   @media screen and (max-width: 768px) {
     .burger {
       display: block;
@@ -102,25 +116,29 @@ body {
       transition: transform .5s ease-in;
 
       & li {
-        & .active,.menu-item {
+        & .active, .menu-item {
           font-size: 20px;
           width: 70px;
           height: 40px;
         }
       }
-      & .menu-nested{
+
+      & .menu-nested {
         width: 70px !important;
         height: 40px !important;
         font-size: 20px !important;
-        & .dropdown{
-          & .droptitl{
+
+        & .dropdown {
+          & .droptitl {
             font-size: 20px;
             width: 70px !important;
             height: 40px !important;
           }
-          & .dropdown-content{
+
+          & .dropdown-content {
             margin-left: -60px;
-            & .menu-item-nested{
+
+            & .menu-item-nested {
               font-size: 20px !important;
               width: 165px !important;
               height: 16px !important;
@@ -228,9 +246,6 @@ body {
       -o-transition: background-color .3s ease-in-out;
     }
 
-    & .menu-item:active, .active:active {
-      @extend %transformation
-    }
 
     @keyframes rotate {
       50% {
@@ -244,4 +259,5 @@ body {
 .main-image {
   width: 100%;
   height: auto;
+  margin-top: 70px;
 }

@@ -11,18 +11,26 @@
     margin-left: 20px;
   }
 }
-@media screen and (max-width: 840px){
-  .main{
+
+@media screen and (max-width: 1024px) {
+  .main {
+    width: 900px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .main {
     margin: -4px auto;
     width: 82%;
-    font-size: $main-size;
+    font-size: 20px;
     padding: 70px;
     background: linear-gradient(45deg, $main-background, transparent);
 
   }
 }
-@media screen and (max-width: 425px){
-  .main{
+
+@media screen and (max-width: 425px) {
+  .main {
     font-size: 18px;
     width: 91%;
     padding: 20px;
