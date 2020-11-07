@@ -1,0 +1,100 @@
+main {
+@extend %main;
+
+  & .new_photo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 90%;
+
+    & div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 50px;
+      width: 720px;
+      height: 478px;
+      margin-bottom: 20px;
+      background-image: url("../../../img/bettiniphoto_0469171_1_originali_1-720x479.jpg");
+      opacity: 0.5;
+    }
+
+    & button {
+      @extend %btn;
+      margin-bottom: 20px;
+    }
+
+    & button:hover {
+      @extend %btnHover;
+    }
+  }
+
+  & .news_inform {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 90%;
+    margin-top: 100px;
+
+    & .news_data {
+      display: flex;
+      flex-direction: column;
+      width: 720px;
+
+      & .title, .text {
+        margin: 20px 0 20px 0;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        font-size: 16px;
+        resize: none;
+      }
+
+      & .text {
+        height: 400px;
+      }
+
+    }
+
+    & .news_button {
+      @extend %btn;
+      margin-bottom: 20px;
+    }
+
+    & .news_button:hover {
+      @extend %btnHover;
+    }
+  }
+}
+
+@media all and(max-width: 768px) {
+  .new_photo, .news_inform {
+    flex-direction: column;
+  }
+  .new_photo {
+    & div {
+      width: 690px !important;
+    }
+  }
+  .news_inform {
+    & .news_data {
+      width: 690px !important;
+    }
+  }
+
+}
+
+@media all and(max-width: 425px) {
+  .new_photo {
+    & div {
+      width: 382px !important;
+    }
+  }
+  .news_inform {
+    & .news_data {
+      width: 382px !important;
+    }
+  }
+}

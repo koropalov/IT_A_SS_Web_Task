@@ -1,0 +1,51 @@
+main {
+  @extend %main;
+
+  & table {
+    border-collapse: collapse;
+    width: 90%;
+    height: 600px;
+
+    & tr {
+      & td, th {
+        border: 1px solid black;
+        padding: 0 25px 0 25px;
+      }
+
+      & th {
+        background-color: #6197e7;
+        color: #b1b7d2;
+        text-shadow: 2px 2px #0a0a0a;
+      }
+    }
+
+    & tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  }
+}
+
+@media all and(max-width: 768px) {
+  main {
+    & h1 {
+      width: 80%;
+    }
+  }
+
+}
+
+@media all and(max-width: 425px) {
+  main {
+    & h1 {
+      font-size: 38px;
+    }
+    & table {
+      height: 500px;
+      & tr {
+        & td, th {
+        font-size: 20px;
+      }
+      }
+    }
+  }
+}

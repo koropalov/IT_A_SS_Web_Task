@@ -12,6 +12,7 @@ body {
   background: linear-gradient(-45deg, #d46969, #eed452, #6197e7, #63eed5);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
+  z-index: 1;
 
   @keyframes gradient {
     0% {
@@ -52,12 +53,12 @@ body {
     }
 
   }
-  @media screen and (max-width: 1024px) {
+  @media all and (max-width: 1024px) {
     .menu-list {
       width: 60%;
     }
   }
-  @media screen and (max-width: 768px) {
+  @media all and (max-width: 768px) {
     .burger {
       display: block;
     }
@@ -110,7 +111,7 @@ body {
       transform: rotate(45deg) translate(-5px, -6px);
     }
   }
-  @media screen and (max-width: 425px) {
+  @media all and (max-width: 425px) {
     .burger {
       display: block;
     }
